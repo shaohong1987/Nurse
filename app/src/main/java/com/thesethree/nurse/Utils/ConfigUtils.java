@@ -11,4 +11,10 @@ public class ConfigUtils {
     * */
 
     public final static int LOGIN_REQUEST_CODE=0;
+
+    /*
+    * 使用的标识符
+    * */
+    public static boolean isLogin=false;
+
 }

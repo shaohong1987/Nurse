@@ -39,7 +39,7 @@ public class MainActivity extends BaseActivity {
                     return true;
                 case R.id.navigation_personal:
                     setTitle(R.string.title_personal);
-                    setContent(PersonalFragment.getInstance());
+                    setContent(PersonalFragment.getInstance(ConfigUtils.isLogin));
                     return true;
             }
             return false;
@@ -76,7 +76,13 @@ public class MainActivity extends BaseActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode){
             case ConfigUtils.LOGIN_REQUEST_CODE:
+                if(resultCode==RESULT_OK){
+                    ConfigUtils.isLogin=true;
 
+
+                    setContent(PersonalFragment.getInstance(ConfigUtils.isLogin));
+
+                }
                 break;
         }
     }

@@ -144,7 +144,7 @@ public class LoginActivity extends BaseActivity {
             showProgress(false);
 
             if (success) {
-                setResult(ConfigUtils.LOGIN_REQUEST_CODE);
+                setResult(RESULT_OK);
                 finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect));
