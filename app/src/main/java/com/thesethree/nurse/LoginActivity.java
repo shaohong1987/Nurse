@@ -8,12 +8,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.text.TextUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-
-import com.thesethree.nurse.Utils.ConfigUtils;
 
 
 public class LoginActivity extends BaseActivity {
@@ -53,6 +52,16 @@ public class LoginActivity extends BaseActivity {
             if (actionBar != null)
                 actionBar.setDisplayHomeAsUpEnabled(true);
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==android.R.id.home){
+            setResult(RESULT_CANCELED);
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void attemptLogin() {

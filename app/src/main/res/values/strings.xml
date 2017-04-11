@@ -10,6 +10,16 @@
     <string name="prompt_username">用户名</string>
     <string name="prompt_password">密码</string>
     <string name="action_sign_in_short">登录</string>
+    <string name="action_log_out_short">注销</string>
     <string name="error_incorrect">用户名或密码不正确</string>
     <string name="error_field_required">*必填</string>
+
+    <!-- Personal -->
+    <string name="title_setting">设置</string>
+    <string name="title_contact">联系我们</string>
+    <string name="title_mistake_book">错题集</string>
+    <string name="title_personal_info">个人资料</string>
+    <string name="title_personal_icon">头像</string>
+    <string name="title_personal_cent">积分记录</string>
+    <string name="title_personal_login_days">登录记录</string>
 </resources>
