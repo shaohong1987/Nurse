@@ -22,4 +22,9 @@
     <string name="title_personal_icon">头像</string>
     <string name="title_personal_cent">积分记录</string>
     <string name="title_personal_login_days">登录记录</string>
+
+    <!-- Home -->
+    <string name="notice_title_item_grid_view">通知</string>
+    <string name="news_title_item_grid_view">新闻</string>
+    <string name="more_title_item_grid_view">更多</string>
 </resources>

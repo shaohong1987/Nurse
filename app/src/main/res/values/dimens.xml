@@ -4,4 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="head_padding">8dp</dimen>
     <dimen name="head_text_size">24sp</dimen>
+    <dimen name="width_img_item_grid_view">30dp</dimen>
+    <dimen name="height_img_item_grid_view">30dp</dimen>
 </resources>
