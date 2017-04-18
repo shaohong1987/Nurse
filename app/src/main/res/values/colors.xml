@@ -7,4 +7,6 @@
     <color name="text_clo">#333</color>
     <color name="white">#fff</color>
     <color name="blue">#3F51B5</color>
+    <color name="info_layout_bg">#eaeaea</color>
+    <color name="main_bg">#288df5</color>
 </resources>

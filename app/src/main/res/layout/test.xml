@@ -3,4 +3,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.thesethree.nurse.UI.View.MyGridView
+        android:id="@+id/test_common_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="3"
+        android:layout_marginTop="5sp"
+        android:scrollbars="none"
+        android:background="@color/white"/>
+
 </LinearLayout>

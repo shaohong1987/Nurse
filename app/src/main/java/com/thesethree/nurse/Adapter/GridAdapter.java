@@ -5,8 +5,11 @@ import android.net.Uri;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.thesethree.nurse.Bean.GridItem;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,8 +20,10 @@ import java.util.List;
 public class GridAdapter extends PagerAdapter {
     private List<GridItem> items;
     private List<SimpleDraweeView> images = new ArrayList<SimpleDraweeView>();
+    private Activity context;
 
-    public GridAdapter(Activity context, List<GridItem> items) {
+    public GridAdapter(final Activity context, final List<GridItem> items) {
+        this.context=context;
         if (items == null || items.size() == 0) {
             this.items = new ArrayList<>();
         } else {
@@ -30,11 +35,19 @@ public class GridAdapter extends PagerAdapter {
             Uri uri = Uri.parse(items.get(i).getImageUrl());
             image.setImageURI(uri);
             images.add(image);
+
         }
     }
 
     @Override
-    public Object instantiateItem(ViewGroup container, int position) {
+    public Object instantiateItem(ViewGroup container, final int position) {
+        View view=images.get(position);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, items.get(position).getIndex()+",敬请期待", Toast.LENGTH_SHORT).show();
+            }
+        });
         container.addView(images.get(position));
         return images.get(position);
     }

@@ -34,7 +34,7 @@ public class CourseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.course, null);
 
-        GridView gridview = (GridView) view.findViewById(R.id.common_grid_view);
+        GridView gridview = (GridView) view.findViewById(R.id.course_common_grid_view);
         GridViewInit(gridview);
 
         return view;

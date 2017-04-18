@@ -4,7 +4,7 @@
     android:layout_height="wrap_content">
 
     <com.thesethree.nurse.UI.View.MyGridView
-        android:id="@+id/common_grid_view"
+        android:id="@+id/course_common_grid_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
